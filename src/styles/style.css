@@ -1,3 +1,52 @@
-#content{
-    color:red;
+body {
+  margin: 0;
+}
+#content {
+  font-family: 'Playfair display';
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: max-content;
+  background-color: black;
+}
+#name {
+  color: white;
+  font-size: 6rem;
+}
+#nav {
+    width:100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-button {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+}
+.nav-button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.nav-button:not(:hover) {
+  transition: 0.6s;
+  transform: scale(1);
+}
+.selected {
+  transition: 3s;
+  box-shadow: inset white 0 -0.5rem 0 ;
+}
+#middle {
+  background-color: black;
+  width: 100%;
+  height: 99.8vh;
 }

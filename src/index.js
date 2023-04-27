@@ -1,5 +1,4 @@
 import "./styles/style.css";
-import component from "./components/test";
+import loadPage from "./functions/loadPage";
 
-
-component();
+loadPage();
