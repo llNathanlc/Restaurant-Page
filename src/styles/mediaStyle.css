@@ -1,71 +1,98 @@
-
 @media only screen and (max-width: 767px) {
   /*header*/
-  #header{
+  #header {
+    background-color: rgba(0, 0, 0, 0);
   }
-  #headerWrapper{
-    transition:1s;
+  #headerWrapper {
+    transition: 1s;
     justify-content: space-between;
     background-color: #14141498;
-    padding:1rem;
-    padding-bottom:2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
   }
   #name {
     font-size: 2.8rem !important;
     letter-spacing: -0.4rem;
   }
-  #nav{
-    display:none;
+  #nav {
+    display: none;
   }
-  #customSelect{
-    display:none;
+  #customSelect {
+    transition: 1s;
+    display: none;
     flex-direction: column;
-    animation: appearFromTop 5s;
+    animation: WidthandHeight 1s;
   }
-  .selected{
-    transition:0;
+  .selected {
     box-shadow: none;
   }
-  #customSelectButton{
-    transition:1s;
-    display:block;
+  #customSelectButton {
+    transition: 1s;
+    display: block;
     align-self: center;
-    border:none;
+    border: none;
     background: url(../resources/menu-svgrepo-com.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height:2.2rem;
-    width:2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
   }
-  #customSelectButton.scrolled{
-    height:1.5rem;
-    width:1.5rem;
+  #customSelectButton.scrolled {
+    height: 1.5rem;
+    width: 1.5rem;
   }
-  .customSelect-button{
+  .customSelect-button {
+    transition: 1s;
     background-color: #14141498;
     border: none;
-    color:white;
+    color: white;
     text-align: left;
-    padding:1rem;
+    padding: 1rem;
+    font-size: 1.07rem;
+    animation: appearFromTop 0.5s;
   }
-  .nav-button{
+
+  .nav-button {
     font-size: 0.6rem !important;
   }
   #header.scrolled {
     transition: 1s;
-    height:min-content;
+    height: min-content;
     position: fixed;
     z-index: 20;
     background-color: #1414144c;
     margin-top: 1rem;
-    width:100%;
+    width: 100%;
   }
-  #headerWrapper.scrolled{
-    transition:1s;
-    padding-bottom:1rem;
+  #headerWrapper.scrolled {
+    transition: 1s;
+    padding-bottom: 1rem;
   }
   #name.scrolled {
     font-size: 2rem !important;
+  }
+
+  /*Footer*/
+  #footer {
+    padding: 1rem;
+  }
+  #footerWrapper {
+    font-size: 0.8rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footTitle {
+    font-size: 1.2rem;
+    align-self: center;
+  }
+  .foot-button {
+    font-size: 0.8rem;
+  }
+  #rightFooterText {
+    flex-direction: row;
   }
 
   /*home*/
@@ -78,77 +105,128 @@
   #welcomeMessage {
     font-size: 1rem;
   }
-  #cards{
-    height:70vw;
+  #cards {
+    height: 100vw;
   }
   .card {
     font-size: 1.2rem;
   }
-  #text{
-    padding:2rem;
+  #text {
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
-  #textTitle{
+  #textTitle {
     font-size: 1rem;
   }
-  #textParagraph{
-    font-size:0.8rem;
+  #textParagraph {
+    font-size: 0.8rem;
     line-height: 1.2rem;
     text-align: left;
-    padding:0;
+    padding: 0;
   }
-  #slideImg{
-    height:150vw;
+  #slideImg {
+    height: 150vw;
   }
-  #slideImgTwo{
-    height:fit-content;
+  #slideImgTwo {
+    height: fit-content;
   }
-  #slideImgTwoWrapper{
-    padding:2rem;
-    padding-top:4rem;
-    gap:1rem;
+  #slideImgTwoWrapper {
+    padding: 2rem;
+    padding-top: 4rem;
+    gap: 1rem;
   }
-  #slideImgTwoTitle{
+  #slideImgTwoTitle {
     font-size: 1rem;
   }
-  #slideImgTwoText{
-    font-size:0.8rem;
-    padding:0;
+  #slideImgTwoText {
+    font-size: 0.8rem;
+    padding: 0;
   }
-  #chefDiv{
+  #chefDiv {
     flex-wrap: wrap;
     justify-content: center;
   }
-  #chefTitle{
-    font-size: 1rem ;
+  #chefTitle {
+    font-size: 1rem;
   }
-  #chef{
-    height:12rem;
+  #chef {
+    height: 12rem;
   }
-  #chefBackground{
-    font-size:0.8rem;
-    padding:0;
+  #chefBackground {
+    font-size: 0.8rem;
+    padding: 0;
   }
-  #chefText{
+  #chefText {
     font-size: 0.7rem;
   }
-  #textTwo{
-    height:fit-content;
-    padding:2rem;
+  #textTwo {
+    height: fit-content;
+    padding: 2rem;
   }
-  #textTwoTitle{
+  #textTwoTitle {
     font-size: 1rem;
   }
-  #textTwoParagraph{
-    font-size:0.8rem;
+  #textTwoParagraph {
+    font-size: 0.8rem;
   }
-  #entrance{
-    height:13rem;
+  #entrance {
+    height: 13rem;
   }
 
-  #locationWrapper{
+  #locationWrapper {
     flex-wrap: wrap;
     justify-content: center;
-    gap:2rem;
-    padding-top:2rem;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+  /*menu*/
+  #menuHeader {
+    height: 190vw;
+    background: url(../resources/bricks.jpg) 50% 0;
+  }
+  #menuTitle {
+    font-size: 2.7rem;
+  }
+  .title {
+    font-size: 1.3rem;
+    border-bottom: white 4px groove;
+  }
+  .elements {
+    padding: 0;
+    font-size: 0.7rem;
+  }
+  .wrapper {
+    border: white 4px groove;
+  }
+  .background {
+    padding: 0.2rem;
+    padding-top: 3rem;
+  }
+  #beveragesPrice {
+    line-height: 1rem;
+  }
+  #beverages {
+    padding-bottom: 5rem;
+  }
+
+  /* contact */
+  #contactTitle {
+    font-size: 2.7rem;
+    height: 190vw;
+    background: url(../resources/bricks.jpg) 50% 0;
+  }
+  #map {
+    height: 10rem;
+    width: 10rem;
+  }
+  #information,
+  #locationText {
+    font-size: 1rem;
+  }
+  #contactMiddle {
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 3rem;
   }
 }

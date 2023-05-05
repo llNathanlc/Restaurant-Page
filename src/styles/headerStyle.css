@@ -9,6 +9,7 @@
 }
 #headerWrapper{
   display:flex;
+  justify-content: center;
 }
 #name {
   transition: 0.5s;

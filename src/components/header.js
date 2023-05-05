@@ -23,25 +23,25 @@ const navigation = (() => {
   const customSelect = document.createElement("div");
   customSelect.id = "customSelect";
 
-  customSelectButton.addEventListener('pointerdown', () => {
-    if(customSelect.style.display === "flex"){
+  customSelectButton.addEventListener("pointerdown", () => {
+    if (customSelect.style.display === "flex") {
       customSelect.style.display = "none";
+    } else {
+      customSelect.style.display = "flex";
     }
-    else{ customSelect.style.display = "flex";}
-  })
-
+  });
 
   const homeButtonClone = homeButton.cloneNode(true);
-  homeButtonClone.textContent="Home";
-  homeButtonClone.classList.add('customSelect-button')
+  homeButtonClone.textContent = "Home";
+  homeButtonClone.classList.add("customSelect-button");
   homeButtonClone.classList.remove("nav-button");
   const menuButtonClone = menuButton.cloneNode(true);
-  menuButtonClone.textContent="Menu";
-  menuButtonClone.classList.add('customSelect-button')
+  menuButtonClone.textContent = "Menu";
+  menuButtonClone.classList.add("customSelect-button");
   menuButtonClone.classList.remove("nav-button");
   const contactButtonClone = contactButton.cloneNode(true);
-  contactButtonClone.textContent="Contact";
-  contactButtonClone.classList.add('customSelect-button')
+  contactButtonClone.textContent = "Contact";
+  contactButtonClone.classList.add("customSelect-button");
   homeButtonClone.classList.remove("nav-button");
 
   const logicClone = (button) => {

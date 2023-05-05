@@ -31,6 +31,7 @@ const menu = (() => {
   const appetizersPrice = document.createElement("div");
   appetizersPrice.id = "appetizersPrice";
   appetizersPrice.classList.add('pre-wrap');
+  appetizersPrice.classList.add('price');
   appetizersPrice.textContent="€8\n\n\n€7\n\n\n€12\n\n\n€9\n\n\n€10\n\n\n€11\n\n\n€14"
 
   const burgers = document.createElement('div');
@@ -55,6 +56,7 @@ const menu = (() => {
   const burgersPrice = document.createElement('p');
   burgersPrice.id = "burgersPrice";
   burgersPrice.classList.add('pre-wrap');
+  burgersPrice.classList.add('price');
   burgersPrice.textContent="€14\n\n\n€13\n\n\n€12\n\n\n€15\n\n\n€14\n\n\n€18\n\n\n€13\n\n\n€12";
 
   const salads = document.createElement('div');
@@ -78,6 +80,7 @@ const menu = (() => {
   const saladsPrice = document.createElement('p');
   saladsPrice.id = "saladsPrice";
   saladsPrice.classList.add('pre-wrap');
+  saladsPrice.classList.add('price');
   saladsPrice.textContent="€11\n\n\n€10\n\n\n€12\n\n\n€10\n\n\n€11\n\n\n€13";
 
   const desserts = document.createElement('div');
@@ -101,6 +104,7 @@ const menu = (() => {
   const dessertsPrice = document.createElement('p');
   dessertsPrice.id = "dessertsPrice";
   dessertsPrice.classList.add('pre-wrap');
+  dessertsPrice.classList.add('price');
   dessertsPrice.textContent="€8\n\n\n€7\n\n\n€8\n\n\n€6\n\n\n€7\n\n\n€9";
 
   const beverages = document.createElement('div');
@@ -124,6 +128,7 @@ const menu = (() => {
   const beveragesPrice = document.createElement('p');
   beveragesPrice.id = "beveragesPrice";
   beveragesPrice.classList.add('pre-wrap');
+  beveragesPrice.classList.add('price');
   beveragesPrice.textContent="€5\n\n\n€3\n\n\n€4\n\n\n€3\n\n\n€2\n\n\n€2\n\n\n€6\n\n\n€1";
 
   const content = document.getElementById("content");
