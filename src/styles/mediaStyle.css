@@ -107,24 +107,24 @@
     font-size: 1rem;
   }
   #cards {
-    padding-top:3rem;
-    padding-bottom:3rem;
-    height:fit-content;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: fit-content;
     flex-direction: column;
-    gap:3rem;
+    gap: 3rem;
   }
   .card {
     font-size: 1.2rem;
     width: 20%;
     text-align: center;
   }
-  #cardOne{
-    position:relative;
-    right:4rem;
+  #cardOne {
+    position: relative;
+    right: 4rem;
   }
-  #cardTwo{
-    position:relative;
-    left:4rem;
+  #cardTwo {
+    position: relative;
+    left: 4rem;
   }
   .visibleright {
     animation: slideInFromLeft 1.5s;
@@ -152,12 +152,15 @@
   }
   #textParagraph {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
     text-align: left;
     padding: 0;
   }
   #slideImg {
     height: 150vw;
+    background: url(../resources/restaurant.jpg) 40% 0;
+    background-size: cover;
+    background-attachment: fixed;
   }
   #slideImgTwo {
     height: fit-content;
@@ -173,6 +176,8 @@
   #slideImgTwoText {
     font-size: 0.8rem;
     padding: 0;
+    text-align: left;
+    line-height: 1.4rem;
   }
   #chefDiv {
     flex-wrap: wrap;
