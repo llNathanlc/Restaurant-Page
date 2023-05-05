@@ -107,12 +107,24 @@
     font-size: 1rem;
   }
   #cards {
-    height: 100vw;
-    padding-right: 1.5rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    height:fit-content;
+    flex-direction: column;
+    gap:3rem;
   }
   .card {
     font-size: 1.2rem;
     width: 20%;
+    text-align: center;
+  }
+  #cardOne{
+    position:relative;
+    right:4rem;
+  }
+  #cardTwo{
+    position:relative;
+    left:4rem;
   }
   #text {
     padding: 2rem;

@@ -18,12 +18,14 @@ const home = (() => {
   const cardOne = document.createElement("div");
   cardOne.classList.add("fadeoutleft");
   cardOne.classList.add("card");
+  cardOne.id = "cardOne";
   cardOne.textContent = "Experience gourmet burgers and culinary craftsmanship";
 
   const cardTwo = document.createElement("div");
   cardTwo.textContent =
     "Indulge in extraordinary, passionately crafted burgers";
   cardTwo.classList.add("card");
+  cardTwo.id = "cardTwo";
   cardTwo.classList.add("fadeoutright");
 
   const text = document.createElement("div");

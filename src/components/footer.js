@@ -102,14 +102,15 @@ const footerCreate = (() => {
     });
   };
 
+
   const buttonsLogic = () => {
-    homeButton.addEventListener("pointerdown", () => {
+    homeButton.addEventListener("pointerup", () => {
       logic(homeButton);
     });
-    menuButton.addEventListener("pointerdown", () => {
+    menuButton.addEventListener("pointerup", () => {
       logic(menuButton);
     });
-    contactButton.addEventListener("pointerdown", () => {
+    contactButton.addEventListener("pointerup", () => {
       logic(contactButton);
     });
   };

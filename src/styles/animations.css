@@ -25,7 +25,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
 }
 @keyframes fadeOutRight {
@@ -35,7 +35,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(30%);
   }
 }
 @keyframes fadeIn {
