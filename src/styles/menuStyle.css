@@ -23,9 +23,9 @@
   font-size: 2rem;
   font-weight: bolder;
   align-self: center;
-  padding:1rem;
+  padding: 1rem;
   border-bottom: white 9px solid;
-  border-style:groove;
+  border-style: groove;
   border-radius: 20px;
 }
 .elements {
@@ -37,8 +37,8 @@
   grid-template-columns: 6fr 1fr;
   font-size: 1rem;
   align-items: center;
-  padding-top:3rem;
-  padding-bottom:3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   border: white 9px solid;
-  border-style:groove;
+  border-style: groove;
 }

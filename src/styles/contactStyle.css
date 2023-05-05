@@ -1,34 +1,34 @@
-#contactTitle{
-    display: flex;
-    background: url(../resources/bricks.jpg);
-    height:40vw;
-    padding-top: 5rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    font-weight: bolder;
+#contactTitle {
+  display: flex;
+  background: url(../resources/bricks.jpg);
+  height: 40vw;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bolder;
 }
-#contactMiddle{
-    height: 40vw;
-    padding:5rem;
-    background-color: #141414;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+#contactMiddle {
+  height: 40vw;
+  padding: 5rem;
+  background-color: #141414;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-#information{
-    font-size: x-large;
+#information {
+  font-size: x-large;
 }
-#locationText{
-    font-size: x-large;
+#locationText {
+  font-size: x-large;
 }
-#contactRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#contactRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#map{
-    height:25rem;
-    width:25rem;
+#map {
+  height: 25rem;
+  width: 25rem;
 }

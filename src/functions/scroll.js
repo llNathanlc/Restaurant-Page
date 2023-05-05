@@ -1,25 +1,33 @@
 function scroll() {
   const header = document.getElementById("header");
   const name = document.getElementById("name");
-  const navButtons = document.querySelectorAll('.nav-button');
-  const customSelectButtons = document.querySelectorAll('.customSelect-button');
+  const navButtons = document.querySelectorAll(".nav-button");
+  const customSelectButtons = document.querySelectorAll(".customSelect-button");
   const wrapper = document.getElementById("headerWrapper");
   const button = document.getElementById("customSelectButton");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 1) {
       header.classList.add("scrolled");
-      name.classList.add('scrolled');
-      wrapper.classList.add('scrolled');
-      button.classList.add('scrolled');
-      Array.from(navButtons).forEach(e => { e.classList.add("navButtonScrolled");})
-      Array.from(customSelectButtons).forEach(e => { e.classList.add("customSelectButtonScrolled");})
+      name.classList.add("scrolled");
+      wrapper.classList.add("scrolled");
+      button.classList.add("scrolled");
+      Array.from(navButtons).forEach((e) => {
+        e.classList.add("navButtonScrolled");
+      });
+      Array.from(customSelectButtons).forEach((e) => {
+        e.classList.add("customSelectButtonScrolled");
+      });
     } else {
       header.classList.remove("scrolled");
-      name.classList.remove('scrolled');
-      wrapper.classList.remove('scrolled');
-      button.classList.remove('scrolled');
-      Array.from(navButtons).forEach(e => { e.classList.remove("navButtonScrolled");})
-      Array.from(customSelectButtons).forEach(e => { e.classList.remove("customSelectButtonScrolled");})
+      name.classList.remove("scrolled");
+      wrapper.classList.remove("scrolled");
+      button.classList.remove("scrolled");
+      Array.from(navButtons).forEach((e) => {
+        e.classList.remove("navButtonScrolled");
+      });
+      Array.from(customSelectButtons).forEach((e) => {
+        e.classList.remove("customSelectButtonScrolled");
+      });
     }
   });
 }
@@ -51,4 +59,4 @@ function elementScrollFunction(el1, el2) {
   });
 }
 
-export { scroll, elementScrollFunction,isElementInViewport };
+export { scroll, elementScrollFunction, isElementInViewport };

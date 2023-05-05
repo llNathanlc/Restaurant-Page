@@ -1,4 +1,7 @@
-import { elementScrollFunction,isElementInViewport } from "../functions/scroll";
+import {
+  elementScrollFunction,
+  isElementInViewport,
+} from "../functions/scroll";
 import img from "../resources/chef.png";
 import entrance from "../resources/entrance.png";
 
@@ -39,12 +42,12 @@ const home = (() => {
   textTitle.id = "textTitle";
   textTitle.textContent = "QUALITY, INNOVATION, AMBIANCE";
 
-  const chefDiv = document.createElement('div');
+  const chefDiv = document.createElement("div");
   chefDiv.id = "chefDiv";
 
-  const chefTitle = document.createElement('p');
+  const chefTitle = document.createElement("p");
   chefTitle.id = "chefTitle";
-  chefTitle.textContent = "MEET OUR MASTERMIND: HEAD CHEF BOB"
+  chefTitle.textContent = "MEET OUR MASTERMIND: HEAD CHEF BOB";
 
   const chefWrapper = document.createElement("div");
   chefWrapper.id = "chefWrapper";
@@ -53,10 +56,11 @@ const home = (() => {
   chef.id = "chef";
   chef.src = img;
 
-  const chefBackground = document.createElement('p');
+  const chefBackground = document.createElement("p");
   chefBackground.id = "chefBackground";
-  chefBackground.classList.add('pre-wrap');
-  chefBackground.textContent = "Born in Tuscany, Italy, Bob discovered his passion for cooking in his grandmother's kitchen. At 15, he began his culinary journey as an apprentice in a local restaurant, later attending the renowned Le Cordon Bleu in Paris. Mastering techniques and exploring global flavors, Bob honed his skills in top restaurants across Europe, Asia, and the U.S. \n\nIn 2008, Bob returned to Italy as head chef at The Patty Palace, where his innovative vision for gourmet burgers earned acclaim from food critics and guests alike. \n\nToday, his extraordinary talent and dedication continue to shape The Patty Palace's culinary excellence, creating unforgettable dining experiences with every dish."
+  chefBackground.classList.add("pre-wrap");
+  chefBackground.textContent =
+    "Born in Tuscany, Italy, Bob discovered his passion for cooking in his grandmother's kitchen. At 15, he began his culinary journey as an apprentice in a local restaurant, later attending the renowned Le Cordon Bleu in Paris. Mastering techniques and exploring global flavors, Bob honed his skills in top restaurants across Europe, Asia, and the U.S. \n\nIn 2008, Bob returned to Italy as head chef at The Patty Palace, where his innovative vision for gourmet burgers earned acclaim from food critics and guests alike. \n\nToday, his extraordinary talent and dedication continue to shape The Patty Palace's culinary excellence, creating unforgettable dining experiences with every dish.";
 
   const chefText = document.createElement("div");
   chefText.id = "chefText";
@@ -94,9 +98,9 @@ const home = (() => {
   entranceImg.id = "entrance";
   entranceImg.src = entrance;
 
-  const textTwoTitle = document.createElement('p');
-  textTwoTitle.id= "textTwoTitle";
-  textTwoTitle.textContent = "DINE IN A MAJESTIC UBICATION "
+  const textTwoTitle = document.createElement("p");
+  textTwoTitle.id = "textTwoTitle";
+  textTwoTitle.textContent = "DINE IN A MAJESTIC UBICATION ";
 
   const textTwoParagraph = document.createElement("p");
   textTwoParagraph.id = "textTwoParagraph";
@@ -113,29 +117,35 @@ const home = (() => {
     cards.append(cardOne, cardTwo);
     elementScrollFunction(cardOne, cardTwo);
     chefWrapper.append(chef, chefText);
-    chefDiv.append(chefWrapper,chefBackground);
-    text.append(textTitle, textParagraph, chefTitle,chefDiv);
+    chefDiv.append(chefWrapper, chefBackground);
+    text.append(textTitle, textParagraph, chefTitle, chefDiv);
     locationWrapper.append(entranceImg, textTwoParagraph);
     textTwo.append(textTwoTitle, locationWrapper);
-    slideImgTwoWrapper.append(slideImgTwoTitle,slideImgTwoText);
+    slideImgTwoWrapper.append(slideImgTwoTitle, slideImgTwoText);
     slideImgTwo.appendChild(slideImgTwoWrapper);
 
-    middle.append(welcome,cards,slideImg,text,slideImgTwo,textTwo);
+    middle.append(welcome, cards, slideImg, text, slideImgTwo, textTwo);
     content.insertBefore(middle, footer);
 
-    window.addEventListener('scroll',() =>{
-      if(isElementInViewport(textTitle)) textTitle.classList.add('fadein');
-      if(isElementInViewport(textParagraph)) textParagraph.classList.add('fadein');
-      if(isElementInViewport(chefWrapper)) chefWrapper.classList.add('fadein');
-      if(isElementInViewport(chefTitle)) chefTitle.classList.add('fadein');
-      if(isElementInViewport(chef)) chef.classList.add('fadein');
-      if(isElementInViewport(chefDiv)) chefDiv.classList.add('fadein');
-      if(isElementInViewport(chefBackground)) chefBackground.classList.add('fadein');
-      if(isElementInViewport(slideImgTwoTitle)) slideImgTwoTitle.classList.add('fadein');
-      if(isElementInViewport(slideImgTwoText)) slideImgTwoText.classList.add('fadein');
-      if(isElementInViewport(entranceImg)) entranceImg.classList.add('fadein');
-      if(isElementInViewport(textTwoTitle)) textTwoTitle.classList.add('fadein');
-      if(isElementInViewport(textTwoParagraph)) textTwoParagraph.classList.add('fadein');
+    window.addEventListener("scroll", () => {
+      if (isElementInViewport(textTitle)) textTitle.classList.add("fadein");
+      if (isElementInViewport(textParagraph))
+        textParagraph.classList.add("fadein");
+      if (isElementInViewport(chefWrapper)) chefWrapper.classList.add("fadein");
+      if (isElementInViewport(chefTitle)) chefTitle.classList.add("fadein");
+      if (isElementInViewport(chef)) chef.classList.add("fadein");
+      if (isElementInViewport(chefDiv)) chefDiv.classList.add("fadein");
+      if (isElementInViewport(chefBackground))
+        chefBackground.classList.add("fadein");
+      if (isElementInViewport(slideImgTwoTitle))
+        slideImgTwoTitle.classList.add("fadein");
+      if (isElementInViewport(slideImgTwoText))
+        slideImgTwoText.classList.add("fadein");
+      if (isElementInViewport(entranceImg)) entranceImg.classList.add("fadein");
+      if (isElementInViewport(textTwoTitle))
+        textTwoTitle.classList.add("fadein");
+      if (isElementInViewport(textTwoParagraph))
+        textTwoParagraph.classList.add("fadein");
     });
   };
 

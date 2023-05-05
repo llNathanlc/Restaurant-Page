@@ -112,14 +112,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-#slideImgTwoWrapper{
-  display:flex;
+#slideImgTwoWrapper {
+  display: flex;
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(2px);
   background-color: #0a080e88;
-  height:100%;
-  padding:3rem;
+  height: 100%;
+  padding: 3rem;
 }
 #slideImgTwoTitle {
   opacity: 0;
@@ -163,7 +163,7 @@ body {
   opacity: 0;
 }
 #chef {
-  opacity:0;
+  opacity: 0;
   height: 20rem;
 }
 #chefText {
@@ -177,7 +177,7 @@ body {
   opacity: 1;
 }
 #chefBackground {
-  opacity:0;
+  opacity: 0;
   padding-right: 9rem;
   line-height: 1.4rem;
   letter-spacing: 0.1rem;

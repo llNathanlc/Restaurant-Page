@@ -1,7 +1,7 @@
 import home from "../components/home";
 import part from "../components/header";
 import footer from "../components/footer";
-import {scroll} from "./scroll";
+import { scroll } from "./scroll";
 
 function loadPage() {
   const content = document.getElementById("content");

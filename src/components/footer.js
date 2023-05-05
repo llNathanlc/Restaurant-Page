@@ -49,12 +49,12 @@ const footerCreate = (() => {
   rightFooterTitle.textContent = "LINKS";
 
   const rightFooterText = document.createElement("p");
-  rightFooterText.id= "rightFooterText";
+  rightFooterText.id = "rightFooterText";
 
-  const homeButton = document.createElement('button');
-  homeButton.classList.add('clicked');
-  const menuButton = document.createElement('button');
-  const contactButton = document.createElement('button');
+  const homeButton = document.createElement("button");
+  homeButton.classList.add("clicked");
+  const menuButton = document.createElement("button");
+  const contactButton = document.createElement("button");
 
   const logic = (button) => {
     const middle = document.getElementById("middle");
@@ -98,21 +98,21 @@ const footerCreate = (() => {
     }
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-  });
+      behavior: "smooth",
+    });
   };
 
   const buttonsLogic = () => {
-    homeButton.addEventListener('pointerdown', ()=>{
-        logic(homeButton);
-    })
-    menuButton.addEventListener('pointerdown', ()=>{
-        logic(menuButton);
-    })
-    contactButton.addEventListener('pointerdown', ()=>{
-        logic(contactButton);
-    })
-  }
+    homeButton.addEventListener("pointerdown", () => {
+      logic(homeButton);
+    });
+    menuButton.addEventListener("pointerdown", () => {
+      logic(menuButton);
+    });
+    contactButton.addEventListener("pointerdown", () => {
+      logic(contactButton);
+    });
+  };
   const buttonsStart = () => {
     homeButton.classList.add("foot-button");
     homeButton.textContent = "Home";
@@ -124,9 +124,8 @@ const footerCreate = (() => {
     contactButton.textContent = "Contact";
 
     buttonsLogic();
-    rightFooterText.append(homeButton,menuButton,contactButton);
-
-  }
+    rightFooterText.append(homeButton, menuButton, contactButton);
+  };
 
   const footer = () => {
     const foot = document.createElement("div");

@@ -19,7 +19,7 @@ const contact = (() => {
     "Check our horary: \n\nMonday to Sunday\nFrom 12:00 am to 00:00 pm \n\n\nYou can contact us at:\n\nPhone: 000 000 000\nE-mail: thePattyPalace@theodinproject.com";
 
   const contactRight = document.createElement("div");
-  contactRight.id="contactRight";
+  contactRight.id = "contactRight";
   contactRight.classList.add("contactDiv");
 
   const locationText = document.createElement("p");
@@ -47,7 +47,7 @@ const contact = (() => {
     const footer = document.getElementById("footer");
 
     contactLeft.appendChild(information);
-    contactRight.append(locationText,mapElem);
+    contactRight.append(locationText, mapElem);
     contactMiddle.append(contactLeft, contactRight);
 
     middle.append(contactTitle, contactMiddle);

@@ -7,6 +7,4 @@ import "./styles/animations.css";
 import "./styles/mediaStyle.css";
 import loadPage from "./functions/loadPage";
 
-
 loadPage();
-
