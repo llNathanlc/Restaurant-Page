@@ -77,6 +77,7 @@ const navigation = (() => {
       top: 0,
       behavior: "smooth",
     });
+    customSelect.style.display = "none";
   };
 
   const logic = (button) => {

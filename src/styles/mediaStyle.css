@@ -83,6 +83,7 @@
     align-items: center;
     text-align: center;
     gap: 1rem;
+    padding-top:4rem;
   }
   .footTitle {
     font-size: 1.2rem;
@@ -107,9 +108,11 @@
   }
   #cards {
     height: 100vw;
+    padding-right:1.5rem;
   }
   .card {
     font-size: 1.2rem;
+    width:20%;
   }
   #text {
     padding: 2rem;
@@ -198,6 +201,9 @@
   }
   .wrapper {
     border: white 4px groove;
+    padding-left:0.4rem;
+    justify-items: end;
+    padding-right:0.4rem;
   }
   .background {
     padding: 0.2rem;
@@ -209,7 +215,6 @@
   #beverages {
     padding-bottom: 5rem;
   }
-
   /* contact */
   #contactTitle {
     font-size: 2.7rem;
@@ -217,8 +222,8 @@
     background: url(../resources/bricks.jpg) 50% 0;
   }
   #map {
-    height: 10rem;
-    width: 10rem;
+    height: 19rem;
+    width: 19rem;
   }
   #information,
   #locationText {

@@ -128,11 +128,14 @@ const home = (() => {
       if(isElementInViewport(textParagraph)) textParagraph.classList.add('fadein');
       if(isElementInViewport(chefWrapper)) chefWrapper.classList.add('fadein');
       if(isElementInViewport(chefTitle)) chefTitle.classList.add('fadein');
+      if(isElementInViewport(chef)) chef.classList.add('fadein');
       if(isElementInViewport(chefDiv)) chefDiv.classList.add('fadein');
+      if(isElementInViewport(chefBackground)) chefBackground.classList.add('fadein');
       if(isElementInViewport(slideImgTwoTitle)) slideImgTwoTitle.classList.add('fadein');
       if(isElementInViewport(slideImgTwoText)) slideImgTwoText.classList.add('fadein');
+      if(isElementInViewport(entranceImg)) entranceImg.classList.add('fadein');
       if(isElementInViewport(textTwoTitle)) textTwoTitle.classList.add('fadein');
-      if(isElementInViewport(locationWrapper)) locationWrapper.classList.add('fadein');
+      if(isElementInViewport(textTwoParagraph)) textTwoParagraph.classList.add('fadein');
     });
   };
 

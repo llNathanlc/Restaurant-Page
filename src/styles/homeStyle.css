@@ -163,13 +163,13 @@ body {
   opacity: 0;
 }
 #chef {
+  opacity:0;
   height: 20rem;
 }
 #chefText {
   font-style: italic;
 }
 #chefDiv {
-  opacity: 0;
   display: flex;
   gap: 1rem;
 }
@@ -177,6 +177,7 @@ body {
   opacity: 1;
 }
 #chefBackground {
+  opacity:0;
   padding-right: 9rem;
   line-height: 1.4rem;
   letter-spacing: 0.1rem;
@@ -188,7 +189,6 @@ body {
   background-color: #141414;
 }
 #locationWrapper {
-  opacity: 0;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -197,9 +197,11 @@ body {
   opacity: 1;
 }
 #entrance {
+  opacity: 0;
   height: 25rem;
 }
 #textTwoParagraph {
+  opacity: 0;
   line-height: 1.4rem;
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
