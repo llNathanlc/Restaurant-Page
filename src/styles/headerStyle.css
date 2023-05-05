@@ -1,0 +1,72 @@
+#header {
+  transition: 0.5s;
+  position: absolute;
+  width: 100%;
+  height:min-content;
+  display:flex;
+  flex-direction: column;
+  background-color: #14141498;
+}
+#headerWrapper{
+  display:flex;
+}
+#name {
+  transition: 0.5s;
+  padding: 0;
+  color: rgb(205, 205, 205);
+  text-align: center;
+  font-size: calc(3.5em + 1vmin);
+  letter-spacing: -0.5rem;
+}
+#name.scrolled{
+  font-size:calc(2em + 1vmin); 
+  letter-spacing:-0.3rem
+}
+#header.scrolled {
+  transition: 1s;
+  height:min-content;
+  position: fixed;
+  z-index: 20;
+  background-color: #1414144c;
+  margin-top: 1rem;
+}
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#customSelect{
+  display:none;
+}
+#customSelectButton{
+  display:none;
+}
+.nav-button {
+  transition: 0.5s;
+  padding: 0.6rem;
+  width:30%;
+  font-family: "Roboto";
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: calc(1em + 1vmin);
+  color: rgb(205, 205, 205);
+  border: none;
+}
+.navButtonScrolled{
+  font-size:calc(0.7em + 1vmin);
+  padding:0.3rem;width:15%;
+  height:min-content;
+}
+.nav-button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.nav-button:not(:hover) {
+  transition: 0.6s;
+  transform: scale(1);
+}
+.selected {
+  transition: 5s;
+  box-shadow: inset rgb(205, 205, 205) 0 -0.3rem 0;
+}

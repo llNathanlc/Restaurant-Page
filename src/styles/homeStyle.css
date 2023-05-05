@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+}
+#content {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  color: rgb(205, 205, 205);
+  width: 100%;
+}
+#welcome {
+  padding-top: 5rem;
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../resources/hamburgers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#welcomeMessage {
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  width: min(70%, 100%);
+  height: fit-content;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+.pre-wrap {
+  white-space: pre-wrap;
+}
+#cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vw;
+  background: url(../resources/bricks.jpg);
+  background-size: cover;
+}
+.card {
+  opacity: 0;
+  font-size: 2.3em;
+  width: 25%;
+}
+.visibleright {
+  animation: slideInFromRight 1.5s;
+  animation-fill-mode: forwards;
+}
+.fadeoutleft {
+  animation: fadeOutLeft 1.5s;
+  animation-fill-mode: forwards;
+}
+.visibleleft {
+  animation: slideInFromLeft 1.5s;
+  animation-fill-mode: forwards;
+}
+.fadeoutright {
+  animation: fadeOutRight 1.5s;
+  animation-fill-mode: forwards;
+}
+.fadein {
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+}
+#text {
+  height: 40vw;
+  background-color: #141414;
+}
+#slideImg {
+  height: 50vw;
+  background: url(../resources/restaurant.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#text {
+  padding: 5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+}
+#textTitle {
+  opacity: 0;
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+#textTitle.fadein {
+  opacity: 1;
+}
+#textParagraph {
+  opacity: 0;
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+#textParagraph.fadein {
+  opacity: 1;
+}
+#slideImgTwo {
+  height: 40vw;
+  background: url(../resources/kitchen.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#slideImgTwoWrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  background-color: #0a080e88;
+  height:100%;
+  padding:3rem;
+}
+#slideImgTwoTitle {
+  opacity: 0;
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+#slideImgTwoTitle.fadein {
+  opacity: 1;
+}
+#slideImgTwoText {
+  opacity: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-weight: bolder;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+#slideImgTwoText.fadein {
+  opacity: 1;
+}
+#chefWrapper {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#chefWrapper.fadein {
+  opacity: 1;
+}
+#chefTitle {
+  text-align: center;
+  padding-top: 5rem;
+  opacity: 0;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#chefTitle.fadein {
+  opacity: 0;
+}
+#chef {
+  height: 20rem;
+}
+#chefText {
+  font-style: italic;
+}
+#chefDiv {
+  opacity: 0;
+  display: flex;
+  gap: 1rem;
+}
+#chefDiv.fadein {
+  opacity: 1;
+}
+#chefBackground {
+  padding-right: 9rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+#textTwo {
+  height: 40vw;
+  padding: 6rem;
+  background-color: #141414;
+}
+#locationWrapper {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#locationWrapper.fadein {
+  opacity: 1;
+}
+#entrance {
+  height: 25rem;
+}
+#textTwoParagraph {
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+#textTwoTitle {
+  text-align: center;
+  opacity: 0;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#textTwoTittle.fadein {
+  opacity: 1;
+}

@@ -1,0 +1,42 @@
+#footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+  height: fit-content;
+  gap: 2rem;
+}
+#githubIcon {
+  height: 3rem;
+}
+#githubLink {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+}
+#footerWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: white 3px solid;
+}
+.footDiv {
+  display: flex;
+  flex-direction: column;
+}
+.footTitle {
+  font-size: larger;
+  font-weight: bolder;
+}
+#rightFooterText {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  gap: 2rem;
+}
+.foot-button {
+  border: none;
+  font-size: 1rem;
+  color: rgb(205, 205, 205);
+  background-color: #141414;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+#menuHeader {
+  padding-top: 5rem;
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../resources/bricks.jpg);
+}
+#menuTitle {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #141414;
+  height: 100%;
+  padding: 3rem;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+  align-self: center;
+  padding:1rem;
+  border-bottom: white 9px solid;
+  border-style:groove;
+  border-radius: 20px;
+}
+.elements {
+  margin: 0;
+  padding-left: 6rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  font-size: 1rem;
+  align-items: center;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  border: white 9px solid;
+  border-style:groove;
+}

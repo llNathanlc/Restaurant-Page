@@ -1,0 +1,154 @@
+
+@media only screen and (max-width: 767px) {
+  /*header*/
+  #header{
+  }
+  #headerWrapper{
+    transition:1s;
+    justify-content: space-between;
+    background-color: #14141498;
+    padding:1rem;
+    padding-bottom:2rem;
+  }
+  #name {
+    font-size: 2.8rem !important;
+    letter-spacing: -0.4rem;
+  }
+  #nav{
+    display:none;
+  }
+  #customSelect{
+    display:none;
+    flex-direction: column;
+    animation: appearFromTop 5s;
+  }
+  .selected{
+    transition:0;
+    box-shadow: none;
+  }
+  #customSelectButton{
+    transition:1s;
+    display:block;
+    align-self: center;
+    border:none;
+    background: url(../resources/menu-svgrepo-com.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:2.2rem;
+    width:2.2rem;
+  }
+  #customSelectButton.scrolled{
+    height:1.5rem;
+    width:1.5rem;
+  }
+  .customSelect-button{
+    background-color: #14141498;
+    border: none;
+    color:white;
+    text-align: left;
+    padding:1rem;
+  }
+  .nav-button{
+    font-size: 0.6rem !important;
+  }
+  #header.scrolled {
+    transition: 1s;
+    height:min-content;
+    position: fixed;
+    z-index: 20;
+    background-color: #1414144c;
+    margin-top: 1rem;
+    width:100%;
+  }
+  #headerWrapper.scrolled{
+    transition:1s;
+    padding-bottom:1rem;
+  }
+  #name.scrolled {
+    font-size: 2rem !important;
+  }
+
+  /*home*/
+  #welcome {
+    height: 200vw;
+    background: url(../resources/hamburgers.jpg) 20% 0 no-repeat;
+    background-attachment: fixed;
+    background-size: 400%;
+  }
+  #welcomeMessage {
+    font-size: 1rem;
+  }
+  #cards{
+    height:70vw;
+  }
+  .card {
+    font-size: 1.2rem;
+  }
+  #text{
+    padding:2rem;
+  }
+  #textTitle{
+    font-size: 1rem;
+  }
+  #textParagraph{
+    font-size:0.8rem;
+    line-height: 1.2rem;
+    text-align: left;
+    padding:0;
+  }
+  #slideImg{
+    height:150vw;
+  }
+  #slideImgTwo{
+    height:fit-content;
+  }
+  #slideImgTwoWrapper{
+    padding:2rem;
+    padding-top:4rem;
+    gap:1rem;
+  }
+  #slideImgTwoTitle{
+    font-size: 1rem;
+  }
+  #slideImgTwoText{
+    font-size:0.8rem;
+    padding:0;
+  }
+  #chefDiv{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #chefTitle{
+    font-size: 1rem ;
+  }
+  #chef{
+    height:12rem;
+  }
+  #chefBackground{
+    font-size:0.8rem;
+    padding:0;
+  }
+  #chefText{
+    font-size: 0.7rem;
+  }
+  #textTwo{
+    height:fit-content;
+    padding:2rem;
+  }
+  #textTwoTitle{
+    font-size: 1rem;
+  }
+  #textTwoParagraph{
+    font-size:0.8rem;
+  }
+  #entrance{
+    height:13rem;
+  }
+
+  #locationWrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem;
+    padding-top:2rem;
+  }
+}
