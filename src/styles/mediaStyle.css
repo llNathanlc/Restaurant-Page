@@ -126,6 +126,22 @@
     position:relative;
     left:4rem;
   }
+  .visibleright {
+    animation: slideInFromLeft 1.5s;
+    animation-fill-mode: forwards;
+  }
+  .fadeoutleft {
+    animation: fadeOutRight 1.5s;
+    animation-fill-mode: forwards;
+  }
+  .visibleleft {
+    animation: slideInFromRight 1.5s;
+    animation-fill-mode: forwards;
+  }
+  .fadeoutright {
+    animation: fadeOutLeft 1.5s;
+    animation-fill-mode: forwards;
+  }
   #text {
     padding: 2rem;
     padding-top: 5rem;
